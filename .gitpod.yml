@@ -1,0 +1,9 @@
+image: node:20
+
+tasks:
+  - init: npm install
+    command: node bin/mcp.js
+
+ports:
+  - port: 22999
+    onOpen: open-preview
